@@ -1,10 +1,17 @@
 ﻿<!DOCTYPE html>
 <html>
+<script type="module" src="./scripts/explorer.js"></script>    
 <head>
     <meta charset="utf-8" />
     <title></title>
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-    Hello World!
+    <div id="explorer-container">        
+        <input type="text" id="search-input" placeholder="Search files & folders...">    
+        <h3 id="current-folder-name"></h3>
+        <div id="file-list"></div>
+        <div id="back-button"></div>
+    </div>
 </body>
 </html>

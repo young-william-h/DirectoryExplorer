@@ -1,0 +1,45 @@
+.actions,
+.new-folder,
+.upload {
+    float: right;
+    min-height: 15px;
+}
+
+#explorer-container {
+    width: 45%;
+    min-width: 650px;
+}
+
+.folder-link {
+    cursor: pointer;
+}
+
+#current-folder-name {
+    font-family: monospace;
+    margin-bottom: 35px;
+}
+
+#back-button {
+    padding: 10px 5px;
+}
+
+/* Container styling */
+.title-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Common button styling to ensure matching heights */
+.action-btn {
+    height: 32px;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    line-height: 1;
+}
+
+.item-row {
+    padding: 2px 0;
+}
