@@ -315,10 +315,7 @@ async function handleUpload(currentPath) {
 export function handleSearch(searchTerm) {
     if (!searchTerm) return handleUrlChange()
 
-    const lowerTerm = searchTerm.toLowerCase()
-
-    console.log(lowerTerm);
-    
+    const lowerTerm = searchTerm.toLowerCase()    
 
     const matchedFolders = Array.from(directoryMap.values()).filter(dir => 
         dir.lowerCaseName.includes(lowerTerm) && dir.relativePath !== "."
@@ -326,11 +323,7 @@ export function handleSearch(searchTerm) {
     
     const matchedFiles = allFiles.filter(file => 
         file.lowerCaseName.includes(lowerTerm)
-    )
-
-    console.log(matchedFiles);
-    console.log(allFiles);
-    
+    )    
 
     renderDirectory({
         search: `Results for "${searchTerm}"`,
