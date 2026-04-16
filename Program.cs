@@ -17,6 +17,9 @@ namespace TestProject {
 
             app.MapControllers();
 
+            app.UseDefaultFiles(); // Enables serving index.html
+            app.UseStaticFiles();  // Enables serving files from wwwroot
+
             app.Run();
         }
     }
